@@ -10,27 +10,28 @@ if (number == 1)
 {
     Console.WriteLine("это Понедельник");
 }
-if (number == 2)
+else if (number == 2) //добавлен оператор "else if" для оптимизации
 {
     Console.WriteLine("Это Вторник");
 }
-if (number == 3)
+else if (number == 3)
 {
     Console.WriteLine("Это Среда");
 }
-if (number == 4)
+else if (number == 4)
 {
     Console.WriteLine("это Четверг");
 }
-if (number == 5)
+else if (number == 5)
 {
     Console.WriteLine("Это Пятница");
 }
-if (number == 6)
+else if (number == 6)
 {
     Console.WriteLine("Это Суббота");
 }
-if (number == 7)
+else if (number == 7)
 {
     Console.WriteLine("Это Воскресенье");
 }
+else Console.WriteLine("Введено некорректное значение"); // добавлено исключение для ввода
