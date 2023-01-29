@@ -11,17 +11,8 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число: ");
 int number3 = Convert.ToInt32(Console.ReadLine());
 int MaxNumber = number1;
-if (number2 > MaxNumber)
-{
-    MaxNumber = number2;
-    Console.WriteLine("Максимальное число = " + MaxNumber);
-}
-else if (number3 > MaxNumber)
-{
-    MaxNumber = number3;
-    Console.WriteLine("максимальное число = " + MaxNumber);
-}
-else
-{
-    Console.WriteLine("введены некорректные значения");
-}
+if (number1 > MaxNumber) MaxNumber = number1;
+if (number2 > MaxNumber) MaxNumber = number2;
+if (number3 > MaxNumber) MaxNumber = number3;
+
+Console.WriteLine("Максимальное число = " + MaxNumber);

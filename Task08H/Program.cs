@@ -2,17 +2,18 @@
 // показывает все четные числа от 1 до N.
 // 5 -> 2, 4
 //8 -> 2, 4, 6, 8
-
 int StartNum = 1;
 Console.WriteLine("Введите натуральное число:");
 int Num = Convert.ToInt32(Console.ReadLine());
-if (Num > 0)
+if (Num > StartNum)
 {
-    int count = Num;
-    while (count % 2 == 0)
+    for (int count = StartNum; count <= Num; count++)
     {
-        Console.Write(count + " ");
-        count++;
+        if (count % 2 == 0)
+        {
+            Console.Write(count + " ");
+        }
+        
     }
 }
 else
