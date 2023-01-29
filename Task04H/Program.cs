@@ -10,10 +10,9 @@ Console.WriteLine("Введите первое число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите первое число: ");
 int number3 = Convert.ToInt32(Console.ReadLine());
-int MaxNumber = 0;
-if (number1 > MaxNumber)
+if (number1 > 0)
 {
-    MaxNumber = number2;
+    MaxNumber = number1;    
     Console.WriteLine("Максимальное число = " + MaxNumber);
 }
 else if (number2 > MaxNumber)
@@ -28,5 +27,5 @@ else if (number3 > MaxNumber)
 }
 else
 {
-    Console.WriteLine("максимальное число = " + MaxNumber);
+    Console.WriteLine("введены некорректные значения");
 }
